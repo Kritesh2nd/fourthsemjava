@@ -211,12 +211,14 @@ public class displaytext extends Main{
                 name1+" [Cost : "+cost1+"]",
                 name2+" [Cost : "+cost2+"]",
                 "I will come later",
-//                Stage 5 option 1 result
+//                Stage 5 option 1 result 51
                 "You gained +1 "+name1+" ["+title1+"]",
-//                Stage 5 option 2 result
+//                Stage 5 option 2 result 52
                 "You gained +1 "+name2+" ["+title2+"]",
-//                Stage 5 option 3 result
-                "Shop function is locked"
+//                Stage 5 option 3 result 53
+                "Shop function is locked",
+//                when silver is not enough 54
+                "You dont have enough silver"
             }               
         };
         for(a=0;a<text.length;a++){if(m==a&&n>=0&&n<text[a].length){System.out.println(text[m][n]);}}
@@ -234,6 +236,7 @@ public class displaytext extends Main{
         int cost1=1100,cost2=1200;
         String[][] text ={
             {
+//                1
                 in.sorcerer.name+" told me you were looking for me.",
                 "Yeah, I was told you were a brave warrior.",
                 "I am in need of some coal but because of goblins running in the "+in.forestname.name+".",
@@ -241,42 +244,50 @@ public class displaytext extends Main{
                 "Ok, I'll bring the coal."
             },
             {
+//                2
                 "Did you bring the coal?",
                 "Yes I brought the coal. ("+yourcoal+"/"+maxcoal+")",
                 "No I did not.",
                 "Shop",
-//                Stage 2 Option 1 result
+//                Stage 2 Option 1 result 211
                 "You were really brave as I heard.",
                 "Here's your reward +1 Iron Armor.",
                 "There is a magical stone called "+in.magicstone.name+" that appears once in a 100 year in "+in.southsea.name,
                 "But there are goblin warriors on the path to "+in.southsea.name+".",
                 "If you bring me 2 "+in.magicstone.name+" I will make you two new equipment.",
-//                Stage 2 Option 2 result
+//                212
+                "You don't have enough coal.",
+//                Stage 2 Option 2 result 22
                 "Come to me when you have collected enough coal."
             },
             {
+//                3
                 "Were you able to get the "+in.magicstone.name+"?",
                 "Yes I brought the "+in.magicstone.name+". ("+yourmagicstone+"/"+maxmagicstone+")",
                 "No I did not.",
                 "Shop",
-//                Stage 3 Option 1 result
+//                Stage 3 Option 1 result 311
                 "You know of no fear. You were really able to get the "+in.magicstone.name+".",
                 "As promised I will make you two new equipment.",
                 "But it's going to be expensive, rare materials are expensive.",
                 "Come to me after a week.",
-//                Stage 3 Option 1 result
+//                312
+                "You don't have enough "+in.magicstone.name+"?",
+//                Stage 3 Option 2 result 32
                 "Come to me when you get the "+in.magicstone.name+"."
             },
             {
+//                4
                 "By any chance do you have more coal?",
                 "If you have more coal, I will buy it from you.",
                 "Yes I have some more coal. ("+yourcoal+"/"+maxcoal+")",
                 "No, I don't have more coal.",
                 "Shop",
-//                Stage 4 Option 1 result                
+//                Stage 4 Option 1 result 411
                 "Here's your reward for the coal +"+coalreward+" "+in.coin.name+".",
+//                412
                 "You don't have enough coal.",
-//                Stage 4 Option 2 result                
+//                Stage 4 Option 2 result 42
                 "You can bring me some more coal. I will pay you accordingly."
             },
             {
@@ -287,6 +298,7 @@ public class displaytext extends Main{
 //                name2 = Malevolent
 //                desc1 = Executioner of Frost
 //                desc2 = Aquycrase Chestpiece
+//                5
                 "Here is my shop.",
                 "----------------------------------------------------------",
                 "|SN| Type  | Name          | Description          | Cost |",
@@ -297,13 +309,13 @@ public class displaytext extends Main{
                 name1+" [Cost : "+cost1+"]",
                 name2+" [Cost : "+cost2+"]",
                 "I will come later",
-//                Stage 5 option 1 result
+//                Stage 5 option 1 result 51
                 "You gained +1 "+name1+" ["+title1+"]",
-//                Stage 5 option 2 result
+//                Stage 5 option 2 result 52
                 "You gained +1 "+name2+" ["+title2+"]",
-//                Stage 5 option 3 result                
+//                Stage 5 option 3 result 53             
                 "Shop function is locked",
-//                when silver is not enough
+//                when silver is not enough 54
                 "You dont have enough silver"
             }
         };

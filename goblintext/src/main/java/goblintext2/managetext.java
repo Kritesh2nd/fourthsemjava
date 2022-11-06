@@ -35,6 +35,7 @@ public class managetext extends Main{
         }
         else if(stage==11){
             dis.name(2);dis.inntext(0,3);dis.inntext(0,4);
+            dis.enter();
         }
         else if(stage==12){
             dis.name(2);
@@ -53,6 +54,7 @@ public class managetext extends Main{
             dis.mayortext(0,2);
             dis.mayortext(0,3);
             dis.mayortext(0,4);
+            dis.enter();
         }
         else if(stage==2){
             dis.name(3);
@@ -154,7 +156,7 @@ public class managetext extends Main{
             dis.enter();
         }
         else if(stage==231){
-            mt.mayor(5);
+            mt.sorcerer(5);
 //            goto sorcerer shop
         }
         else if(stage==232){
@@ -200,7 +202,7 @@ public class managetext extends Main{
             dis.enter();
         }
         else if(stage==331){
-            mt.mayor(5);
+            mt.sorcerer(5);
 //            goto sorcerer shop
         }
         else if(stage==332){
@@ -259,16 +261,169 @@ public class managetext extends Main{
             dis.sorcerertext(4,12);
             dis.enter();
         }
+        else if(stage==54){
+            dis.nextline();
+            dis.sorcerertext(4,13);
+            dis.enter();
+        }
         else{
             dis.invalid();
-            System.out.println("Stage options are 1 2 211 212 22 231 232 30 3 311 312 32 331 332 4 411 412 42 5 51 52 53");
+            System.out.println("Stage options are 1 2 211 212 22 231 232 30 3 311 312 32 331 332 4 411 412 42 5 51 52 53 54");
         } 
     }
     public void balcksmith(int stage){
-        
+        if(stage==1){
+            dis.name(0);
+            dis.balcksmithtext(0,0);
+            dis.enter();
+            dis.name(5);
+            dis.balcksmithtext(0,1);
+            dis.balcksmithtext(0,2);
+            dis.balcksmithtext(0,3);
+            dis.enter();
+            dis.name(0);
+            dis.balcksmithtext(0,4);
+            dis.enter();
+        }
+        else if(stage==2){
+            dis.name(5);
+            dis.balcksmithtext(1,0);
+            dis.name(0);
+            System.out.print("1. ");dis.balcksmithtext(1,1);
+            System.out.print("2. ");dis.balcksmithtext(1,2);
+            System.out.print("3. ");dis.balcksmithtext(1,3);
+        }
+        else if(stage==211){
+            dis.name(5);
+            dis.balcksmithtext(1,4);
+            dis.balcksmithtext(1,5);
+            dis.balcksmithtext(1,6);
+            dis.balcksmithtext(1,7);
+            dis.balcksmithtext(1,8);
+            dis.enter();
+        }
+        else if(stage==212){
+            dis.balcksmithtext(1,9);
+            dis.enter();
+        }
+        else if(stage==22){
+            dis.name(5);
+            dis.balcksmithtext(1,10);
+            dis.enter();
+        }
+        else if(stage==231){
+            mt.balcksmith(5);
+//            goto blacksmith shop
+        }
+        else if(stage==232){
+            dis.locked();
+            dis.enter();
+        }
+        else if(stage==3){
+            dis.name(5);
+            dis.balcksmithtext(2,0);
+            System.out.print("1. ");dis.balcksmithtext(2,1);
+            System.out.print("2. ");dis.balcksmithtext(2,2);
+            System.out.print("3. ");dis.balcksmithtext(2,3);
+        }
+        else if(stage==311){
+            dis.name(5);
+            dis.balcksmithtext(2,4);
+            dis.balcksmithtext(2,5);
+            dis.balcksmithtext(2,6);
+            dis.balcksmithtext(2,7);
+            dis.enter();
+        }
+        else if(stage==312){
+            dis.balcksmithtext(2,8);
+        }
+        else if(stage==32){
+            dis.name(5);
+            dis.balcksmithtext(2,9);
+            dis.enter();
+        }
+        else if(stage==331){
+            mt.balcksmith(5);
+//            goto blacksmith shop
+        }
+        else if(stage==332){
+            dis.locked();
+            dis.enter();
+        }
+        else if(stage==4){
+            dis.name(5);
+            dis.balcksmithtext(3,0);
+            System.out.print("1. ");dis.balcksmithtext(3,1);
+            System.out.print("2. ");dis.balcksmithtext(3,2);
+            System.out.print("3. ");dis.balcksmithtext(3,3);
+        }
+        else if(stage==411){
+            dis.name(5);
+            dis.balcksmithtext(3,4);
+            dis.balcksmithtext(3,5);
+            dis.balcksmithtext(3,6);
+            dis.balcksmithtext(3,7);
+            dis.enter();
+        }
+        else if(stage==412){
+            dis.balcksmithtext(3,8);
+        }
+        else if(stage==42){
+            dis.name(5);
+            dis.balcksmithtext(3,9);
+            dis.enter();
+        }
+        else if(stage==431){
+            mt.balcksmith(5);
+//            goto blacksmith shop
+        }
+        else if(stage==432){
+            dis.locked();
+            dis.enter();
+        }
+        else if(stage==5){
+            dis.name(4);
+            dis.balcksmithtext(4,0);
+            dis.balcksmithtext(4,1);
+            dis.balcksmithtext(4,2);
+            dis.balcksmithtext(4,3);
+            dis.balcksmithtext(4,4);
+            dis.balcksmithtext(4,5);
+            dis.balcksmithtext(4,6);
+            dis.nextline();
+            System.out.print("1. ");dis.balcksmithtext(4,7);
+            System.out.print("2. ");dis.balcksmithtext(4,8);
+            System.out.print("3. ");dis.balcksmithtext(4,9);
+        }
+        else if(stage==51){
+            dis.nextline();
+            dis.balcksmithtext(4,10);
+            dis.enter();
+        }
+        else if(stage==52){
+            dis.nextline();
+            dis.balcksmithtext(4,11);
+            dis.enter();
+        }
+        else if(stage==53){
+            dis.nextline();
+            dis.balcksmithtext(4,12);
+            dis.enter();
+        }
+        else if(stage==54){
+            dis.nextline();
+            dis.balcksmithtext(4,13);
+            dis.enter();
+        }
+        else{
+            dis.invalid();
+            System.out.println("Stage options are 1 2 211 212 22 231 232 3 311 312 32 331 332 4 411 412 42 431 432 5 51 52 53");
+        } 
     }
     public static void main(String[] args) {
-        mt.sorcerer(53);
+        mt.balcksmith(1
+        );
         
     }
 }
+
