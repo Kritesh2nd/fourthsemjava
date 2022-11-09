@@ -1,7 +1,5 @@
 package goblintext2;
-
 import static goblintext2.displaytext.dis;
-
 public class managetext extends Main{
     static managetext mt = new managetext();
     public void town(){
@@ -411,6 +409,7 @@ public class managetext extends Main{
             dis.enter();
         }
         else if(stage==54){
+            
             dis.nextline();
             dis.balcksmithtext(4,13);
             dis.enter();
@@ -421,8 +420,7 @@ public class managetext extends Main{
         } 
     }
     public static void main(String[] args) {
-        mt.balcksmith(1
-        );
+        mt.balcksmith(5);
         
     }
 }

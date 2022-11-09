@@ -12,7 +12,7 @@ public class status extends Main{
         System.out.println("STATUS");
         System.out.println("-----------------------------------------");
         System.out.println("Health  : "+Main.hp+"/"+Main.maxhp);
-        System.out.println("Attack  : "+Main.atk);
+        System.out.println("Attack  : "+Main.atka);
         System.out.println("Defence : "+Main.def);
         System.out.println("Silver  : "+Main.coin);
         System.out.println("Weapon  : "+weapon);

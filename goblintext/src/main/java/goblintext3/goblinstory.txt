@@ -1,0 +1,430 @@
+d:
+cd AllFile3\College\Semister 4\JAVA
+git add goblintext
+git push -u origin master
+
+
+
+Forest name : Whispering Willow Forest
+Town name : Woodpine Rest
+Mayor : Brysen Morella
+Sorcerer : Linus
+Blacksmith : Janumri Runebow
+Nun : Adelisa Adete
+Innkeeper : Sadie Berend
+Coin : Silver
+North Mountain : Ganary Slopes
+West Lake : Bienris Waters
+South sea : The Serene Ocean
+East Forest : Norstead Woods
+Goblin cave : Dorbiens Hollow
+Sword : Starshatterer, Executioner of Frost
+Armor : Malevolent, Aquycrase Chestpiece
+Shield : Radient Shield, Protector of Heros
+Ring : Enid, The Flower of Soul
+Potion : Ayelet, Water of Life
+Herb : Udi Leaf
+Magic Stone : Aquycrase
+
+
+
+You finally reached Woodpine Rest Town.
+
+After talking to townsfolk, you found that this town was recently attacked by the goblins.
+
+You talked to the innkeeper and found out the Mayor is hiring people.
+Maybe you should visit him.
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Temple
+Stage 1
+Nun,
+Do you want to pray in this temple?
+
+1. Pray [Donate 10 silver]
+2. Pray [Donate 100 silver]
+3. Backaway
+
+Nun,
+Stage 1 Option result
+Option 1 & 2
+May god hear your prayers.
+Your hp is increased +1 hp.
+
+Stage 2
+//Gets Radiant Shield after donating 2000 silver
+Nun,
+I stumbled upon this item which I thought was lost.
+Maybe it's fate. You should take this item with you.
+
+You acquired an item. +1 Radiant Shield.
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Inn
+Stage 1
+Innkeeper,
+Do you want to rest in this inn?
+
+1. Yes, I will rest. [Cost 50 silver]
+2. No, I am good.
+
+Stage 1 Option result
+Option 1
+Innkeeper,
+Enjoy your stay.
+You recovered your full hp.
+
+Stage 2
+//Gets map after staying in inn for 10 times
+Innkeeper,
+A customer left this tattered map.
+Maybe you can find a use for it.
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Mayor
+
+--------------------
+Stage 1 
+Kritesh,
+I heard you are hiring people.
+
+Mayor,
+Yes, I am in need of wood and stone for house repair.
+As you see Whispering Willow Wilds is filled with goblins.
+Can you bring me 10 wood and 10 stones from Whispering Forest?
+I will reward you accordingly.
+
+Kritesh,
+Sure, I will bring wood and stone.
+
+click enter to continue...
+
+--------------------
+Stage 2 
+Mayor,
+Did you bring wood and stone?
+
+Kritesh,
+1. Yes I brought wood and stone.
+   [wood (0/5), stone (0/5)]
+2. No I did not.
+
+Stage 2 option result
+Option 1
+Mayor,
+Thank you adventurer. Here's your reward +150 silver.
+You should visit the Sorcerer, he is looking for people to go in the Whispering Forest.
+
+You don't have enough wood and stone.
+
+Option 2
+Mayor,
+Come to me when you have collected enough wood and stone.
+
+--------------------
+Stage 3
+
+Mayor,
+Did you bring wood and stone?
+
+Kritesh,
+1. Yes I brought wood and stone.
+2. No I did not.
+
+Stage 3 option result
+Option 1
+Mayor,
+Thank you adventurer. Here's your reward +150 silver.
+
+You don't have enough wood and stone.
+
+Option 2
+Mayor,
+Come to me when you have collected enough wood and stone.
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Sorcerer
+
+--------------------
+Stage 1
+Kritesh,
+Are you looking for people to go to the Whispering forest?
+
+Sorcerer,
+Yes, I need a core of powerful goblin warriors.
+But you should know that Whispering Forest is filled with goblins.
+
+Kritesh,
+Yes I'm aware that this Whispering Forest is filled with danger.
+
+Sorcerer,
+Then, if you are really strong, first bring me 3 herbs from the Whispering Forest.
+I will reward you accordingly.
+
+Kritesh,
+Ok I'll bring the herb.
+
+click enter to continue...
+
+--------------------
+Stage 2
+Sorcerer,
+Did you bring the herbs?
+
+Kritesh,
+1. Yes I brought the herbs. (0/3)
+2. No I did not.
+3. Shop
+
+Stage 2 option result
+Option 1
+Sorcerer,
+I see you are a strong adventurer. Here's your reward +100 silver.
+Bring me 3 cores of the strong goblin warrior. I will let you buy magic items from my shop.
+And I heard a nearby blacksmith is looking for you.
+
+You don't have enough herbs.
+
+Option 2
+Sorcerer,
+Come to me when you have collected enough herbs.
+
+--------------------
+Stage 3
+Sorcerer,
+Did you defeat the goblin warrior?
+
+Kritesh,
+Yes I was able to defeat the goblin warrior.
+
+Sorcerer,
+Did you get the core?
+
+Kritesh,
+1. Yes I got the core. (0/2)
+2. No I did not.
+3. Shop
+
+Stage 3 option result
+Option 1
+Sorcerer,
+Finally now I will be able to continue my experiment in blood orb.
+Here is your reward +200 silver.
+
+Option 2
+Sorcerer,
+Come to me when you defeat the goblin warrior
+
+--------------------
+Stage 4
+Sorcerer,
+By any chance do you have more herbs?
+
+Kritesh,
+1. Yes I some more herbs. (0/3)
+2. No I did not.
+3. Shop
+
+Stage 4 option result
+Option 1
+Sorcerer,
+Here's your reward for the herb +100 silver.
+
+You don't have enough herbs.
+
+Option 2
+You can bring me some more herbs. I will pay you accordingly.
+
+--------------------
+Stage 5
+Sorcerer
+Here is my shop
+---------------------------------------------------
+|SN| Type    | Name   | Description        | Cost |
+|-------------------------------------------------|
+|1 | Portion | Vitale | Water of Life      | 500  |
+|2 | Ring    | Enid   | The Flower of Soul | 1400 |
+---------------------------------------------------
+Kritesh,
+1. Vitale [Cost : 500]
+2. Enid [Cost : 1200]
+3. I will come later
+
+Stage 5 option result
+
+Option 1
+You gained +1 Vitale [Portion]
+
+Option 2
+You gained +1 Enit [Ring]
+
+Option 3
+Shop function is locked
+
+
+
+Ring : Enid, The Flower of Soul
+Potion : Ayelet, Water of Life
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Blacksmith
+
+--------------------
+Stage 1
+
+Kritesh,
+Sorcerer told me you were looking for me.
+
+Blacksmith,
+Yeah, I was told you were a brave warrior.
+I am in need of some coal but because of goblins running in the forest.
+I am not able to do mine. If you bring me 5 coal I will reward you.
+
+Kritesh,
+Ok, I'll bring the coal.
+
+click enter to continue...
+
+--------------------
+Stage 2
+
+Blacksmith,
+Did you bring the coal?
+
+Kritesh,
+1. Yes I brought the coal. (0/5)
+2. No I did not.
+
+Stage 2 opinion result
+Opinion 1
+You were really brave as I heard.
+Here's your reward +1 Iron Armor.
+There is a magical stone called Aquycrase that appears once in a 100 year in The Serene Ocean
+But there are goblin warriors on the path to The Serene Ocean.
+If you bring me 2 Aquycrase I will make you two new equipment.
+
+Option 2
+Come to me when you have collected enough coal.
+
+--------------------
+Stage 3
+Blacksmith,
+Were you able to get the Aquycrase?
+
+Kritesh,
+1. Yes I brought the magical stone. (0/2)
+2. No I did not.
+3. Shop
+
+Stage 3 opinion result
+Opinion 1
+You know of no fear. You were really able to get the Aquycrase.
+As promised I will make you two new equipment.
+But it's going to be expensive, rare materials are expensive.
+Come to me after a week.
+
+Option 2
+Come to me when you get the Aquycrase.
+
+--------------------
+Stage 4
+Blacksmith,
+If you have more coal, I will buy it from you.
+
+Kritesh,
+1. Yes I have some more coal. (0/5)
+2. No, I don't have more coal.
+3. Shop
+
+Stage 4 option result
+Option 1
+Sorcerer,
+Here's your reward for the coal +50 silver.
+
+You don't have enough coal.
+
+Option 2
+You can bring me some more coal. I will pay you accordingly.
+
+--------------------
+Stage 5
+Blacksmith,
+Here is my shop.
+----------------------------------------------------------
+|SN| Type  | Name          | Description          | Cost |
+|--------------------------------------------------------|
+|1 | Sword | Starshatterer | Executioner of Frost | 1100 |
+|2 | Armor | Malevolent    | Aquycrase Chestpiece | 1200 |
+----------------------------------------------------------
+
+Kritesh,
+1. Starshatterer [Cost : 1000]
+2. Malevolent [Cost : 1100]
+3. I will come later
+
+Stage 5 option result
+
+Option 1
+You gained +1 Starshatterer [Sword]
+
+Option 2
+You gained +1 Malevolent [Armor]
+
+Option 3
+Shop function is locked
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+========================================
+STATUS
+----------------------------------------
+Health  :
+Attack  :
+Defense :
+Silver  :
+Weapon  :
+Armour  :
+Shield  :
+Ring    :
+----------------------------------------
+ITEMS
+----------------------------------------
+Wood 10
+Stone 10
+Coal 10
+Udi Leaf 10
+Aquycrase 30
+Goblin Core 10
+Ayelet 10
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Goblin table
+-----------------------------------------
+||       || goblin || spear  || shaman ||
+-----------------------------------------
+||hp     || 100    || 280    || 1600   ||
+||minatk || 30     || 30     || 60     ||
+||maxatk || 35     || 40     || 70     ||
+||smlatk || 0      || 0      || 115    ||
+||bigatk || 0      || 0      || 135    ||
+||def    || 15     || 25     || 100    ||
+||coin   || 40     || 100    || 500    ||
+||reward || 0      || 1      || 2      ||
+-----------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+item management
+------------first---iron---ring---magic----shield------------
+-------------------------------------------------------------
+||Health  | 100   |       | 170 |         | 200 || 200     ||
+||Attack  | 30-35 | 50-60 |     | 120-140 |     || 120-140 ||
+||Defense | 10    | 15    |     | 25      | 35  || 35      ||
+-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
