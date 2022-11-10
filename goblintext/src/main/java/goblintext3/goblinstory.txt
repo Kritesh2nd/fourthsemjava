@@ -1,3 +1,4 @@
+Swastika
 d:
 cd AllFile3\College\Semister 4\JAVA
 git add goblintext
@@ -428,3 +429,130 @@ item management
 -------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
+
+
+You slashed the goblin.
+You dealt 75 damage to goblin.
+Your Hp : 100 | Goblin Hp : 30
+Goblin attacked you.
+You receive 20 damage.
+
+
+------------------------------------------------------------------------------------------------------------------------
+You are in Whispering Willow Forest
+Where do you want to go
+1. Ganary Slopes
+2. Bienris Waters
+3. The Serene Ocean
+4. Norstead Woods
+5. Dorbiens Hollow
+6. Woodpine Rest
+
+
+You are in Ganary Slopes.
+---x---x---x---x---x---
+You saw a goblin.
+Goblin Hp : 100
+
+What will you do?
+1. Fight
+2. Go back
+-----------xxx---Fight---xxx-----------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Your Hp 100           Goblin Hp 100 |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+You choose to fight the goblin.
+What will you do?
+1. Attack
+2. Chop tree
+2. Run
+
+
+You are in Ganary Slopes.
+---x---x---[x]---x---x---
+You saw a goblin and a tree.
+Goblin Hp : 100
+
+What will you do?
+1. Attack
+2. Chop tree
+2. Run
+
+You are in the Woodpine Rest town.
+Were do you want to go?
+------------------------------------------------------------------------------------------------------------------------
+You are in Ganary Slopes.
+---x---x---x---x---x---
+You saw a normal goblin in raged cloth with a dagger.
+Goblin Hp : 100
+
+What will you do?
+1. Fight
+2. Go back
+
+
+You choose to fight the goblin.
+-----------xxx---Fight---xxx-----------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Your Hp 100           Goblin Hp 100 |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+What will you do?
+1. Attack
+2. Run
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+You are in Ganary Slopes.
+---x---x---x---x---x---
+You saw a normal goblin in raged cloth with a dagger.
+You also saw a tree but it seems you need to defeat the goblin to get the wood.
+Goblin Hp : 100
+
+What will you do?
+1. Fight
+2. Go back
+
+
+You choose to fight the goblin.
+-----------xxx---Fight---xxx-----------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Your Hp 100           Goblin Hp 100 |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+What will you do?
+1. Attack
+2. Run
+
+You won the fight. (^-^)(!_!)
+You chopped the tree.
+You received +2 wood.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,6 +16,12 @@ public class Main {
         if(marmour){Main.def+=10;}
         if(mshield){Main.maxhp+=30;Main.hp=Main.maxhp;Main.def+=10;}
     }
+    public void whichplace(int place){
+        switch (place){
+            case 1 -> System.out.println("Case 1");
+            case 2 -> System.out.println("Case 1");
+        }
+    }
     public static void main(String[] args) {
         
     }
