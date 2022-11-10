@@ -1,0 +1,9 @@
+1. goblin
+2. goblin+wood
+3. goblin+stone
+4. goblin+coal
+5. goblin/spear+herb
+6. spear goblin
+7. spear+magic stone
+8. goblin shaman
+
