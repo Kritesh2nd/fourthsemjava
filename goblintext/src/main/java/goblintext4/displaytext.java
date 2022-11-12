@@ -1,6 +1,8 @@
 package goblintext4;
 import static goblintext4.itemname.in;
+import static goblintext4.textmethod.tm;
 import java.io.IOException;
+import java.util.Scanner;
 public class displaytext extends Main{
     static displaytext dis = new displaytext();
     public void locked(){
@@ -58,9 +60,11 @@ public class displaytext extends Main{
                 "Pray [Donate "+bigdonation+" silver]",
                 "No thankyou.",
 //                Stage 1 Option result
-//                Option 1 & 2
+//                Option 1
                 "May god hear your prayers.",
-                "Your hp is increased +1 hp."
+                "Your hp is increased +1 hp.",
+//                Option 2
+                "Your hp is increased +10 hp."
             },
             {
             //Gets Radiant Shield after donating 2000 silver
@@ -401,17 +405,54 @@ public class displaytext extends Main{
         System.out.println("-> Helas 50% health when equipped with shield");
         dis.line__(50);
     }
-     public static void optionmethod(){
+     public void optionmethod(){
         int a,b,c=0,hlen=0,len=in.thouses.length;
         String dotspace=".  ",closehouse="";
-        String[] thousearr = new String[len+2];
+        String[] thousearr = new String[len+3];
         for(a=0;a<len;a++){
             if(in.thouses[a].open){thousearr[a]=in.thouses[a].name;}
             else{closehouse="";hlen=in.thouses[a].name.length();for(b=0;b<hlen;b++){closehouse+="?";}thousearr[a]=closehouse;}}
-            thousearr[len]="Status";thousearr[len+1]="Description";
-        for(a=0;a<len+2;a++){
+            thousearr[len]="Forest";
+            thousearr[len+1]="Status";
+            thousearr[len+2]="Description";
+        for(a=0;a<len+3;a++){
             if(String.valueOf(a+1).length()>1){dotspace=". ";}
             System.out.println((a+1)+dotspace+thousearr[a]);
+        }
+    }
+    public void whichplace(){
+        dis.optionmethod();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nWhere would you like to go 1~"+(in.thouses.length+3));
+        int opt=sc.nextInt();
+        dis.nextline();
+        if(opt<=in.thouses.length){
+            dis.thousopen(opt,in.thouses[opt-1].open);
+        }
+        else{
+            dis.thousopen(opt,true);
+        }
+        
+    }
+    public void thousopen(int num,boolean open){
+        if(open){
+            switch(num){
+                case 1 -> tm.temple();
+                case 2 -> tm.inn();
+                case 3 -> tm.temple();
+                case 4 -> tm.temple();
+                case 5 -> tm.temple();
+                case 6 -> tm.temple();
+                case 7 -> tm.temple();
+                case 8 -> tm.temple();
+                case 9 -> tm.forest();
+                case 10 -> dis.status();
+                case 11 -> dis.decription();
+                default -> dis.whichplace();
+            }
+        }
+        else{
+            dis.locked();
         }
     }
     public static void main(String[] args) {

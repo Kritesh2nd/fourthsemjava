@@ -1,7 +1,7 @@
 package goblintext4;
 //test package for fight with goblins
-import static goblintext4.displaytext.dis;
-import static goblintext4.itemname.in;
+//import static goblintext4.displaytext.dis;
+//import static goblintext4.itemname.in;
 import java.util.Scanner;
 public class Main {
     static goblintext3.Main main = new goblintext3.Main();
@@ -12,9 +12,8 @@ public class Main {
     static int wood=3,stone=22,coal=12,herb=7,magicstone=2,core=1,potion=1;
     static int opt=0;
     
-   
+    static int templedonation=0;
     public static void main(String[] args) {
-        
         
     }
 }
