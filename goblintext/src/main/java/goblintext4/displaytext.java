@@ -323,6 +323,12 @@ public class displaytext extends Main{
         };
         for(a=0;a<text.length;a++){if(m==a&&n>=0&&n<text[a].length){System.out.println(text[m][n]);}}
     }
+    public void foresttext(){
+        int a,len=in.forest.length;
+        String[] forestname = new String[len];
+        for(a=0;a<len;a++){forestname[a]=in.forest[a].name;}
+        if(!Main.map){forestname[len-1]="???????????????";}
+    }
     public void equipment(){
         Main.hp=100;Main.maxhp=100;Main.minatk=30;Main.maxatk=35;Main.def=15;
         if(Main.isword){Main.minatk+=20;Main.maxatk+=25;}
@@ -456,7 +462,8 @@ public class displaytext extends Main{
         }
     }
     public static void main(String[] args) {
-        dis.optionmethod();
+//        dis.optionmethod();
+        dis.foresttext();
         
     }
 }

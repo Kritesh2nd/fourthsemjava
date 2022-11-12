@@ -1,6 +1,7 @@
 package goblintext4;
 public class itemname {
     static itemname in = new itemname();
+    static int[][] forestcode = {{1,3,3,2,3,2},{1,2,3,2,4,4},{1,2,3,2,3,5},{1,6,6,6,6,7},{6,6,6,6,7,8}};
     public class allname{
         String type="type",name="name",title="title",desc="desc";
         int id=0;
@@ -51,6 +52,16 @@ public class itemname {
         public int coin(){return coin;}
         public int reward(){return reward;}
     }
+    public class forestclass{
+        String name="name";
+        int[] arr;
+        public forestclass(String name,int[] arr){
+            this.name=name;
+            this.arr=arr;
+        }
+        public String name(){return name;}
+        public int[] arr(){return arr;}
+    }
     allname forestname = new allname(1,"forestname","Whispering Willow Forest","Forest Name","");
     allname townname = new allname(2,"townname","Woodpine Rest","Town Name","");
     allname mayor = new allname(3,"mayor","Brysen","Mayor","");
@@ -85,7 +96,13 @@ public class itemname {
     goblinclass spear = new goblinclass(280,30,40,0,0,25,100,1);
     goblinclass shaman = new goblinclass(1600,60,70,115,135,100,500,2);
     goblinclass[] gob={goblin,spear,shaman};
+    forestclass west = new forestclass("Bienris Waters",forestcode[0]);
+    forestclass north = new forestclass("Ganary Slopes",forestcode[1]);
+    forestclass east = new forestclass("Norstead Woods",forestcode[2]);
+    forestclass south = new forestclass("The Serene Ocean",forestcode[3]);
+    forestclass cave = new forestclass("Dorbiens Hollow",forestcode[4]);
+    forestclass[] forest = {west,north,east,south,cave};
     public static void main(String[] args) {
-        System.out.println(in.gob[0].hp);
+        System.out.println(forestcode.length);
     }
 }
