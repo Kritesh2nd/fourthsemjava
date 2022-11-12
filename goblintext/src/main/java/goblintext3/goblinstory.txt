@@ -1,4 +1,3 @@
-Swastika
 d:
 cd AllFile3\College\Semister 4\JAVA
 git add goblintext

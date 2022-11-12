@@ -1,3 +1,8 @@
+d:
+cd AllFile3\College\Semister 4\JAVA
+git add goblintext
+git push -u origin master
+
 1. goblin
 2. goblin+wood
 3. goblin+stone

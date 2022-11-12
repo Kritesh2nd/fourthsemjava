@@ -1,6 +1,7 @@
 package goblintext4;
 //test package for fight with goblins
 import static goblintext4.displaytext.dis;
+import static goblintext4.itemname.in;
 import java.util.Scanner;
 public class Main {
     static goblintext3.Main main = new goblintext3.Main();
@@ -11,18 +12,9 @@ public class Main {
     static int wood=3,stone=22,coal=12,herb=7,magicstone=2,core=1,potion=1;
     static int opt=0;
     
-    public static void optionmethod(){
-//        dt.mainoption();
-        System.out.println("");
-        System.out.println("Choose a option ");
-        opt=sc.nextInt();
-        switch(opt){
-            case 1 -> System.out.println("");
-            default -> System.out.println("");
-        }
-    }
+   
     public static void main(String[] args) {
-        optionmethod();
+        
         
     }
 }

@@ -1,8 +1,6 @@
 package goblintext4;
-
 import static goblintext4.itemname.in;
 import java.io.IOException;
-
 public class displaytext extends Main{
     static displaytext dis = new displaytext();
     public void locked(){
@@ -351,8 +349,7 @@ public class displaytext extends Main{
         System.out.println("Shield  : "+shield);
         System.out.println("Ring    : "+ring);
         dis.line_(30);
-        System.out.println("ITEMS");
-        dis.line_(30);
+        System.out.println("ITEMS");dis.line_(30);
         System.out.println("Wood        : "+Main.wood);
         System.out.println("Stone       : "+Main.stone);
         System.out.println("Coal        : "+Main.coal);
@@ -362,12 +359,12 @@ public class displaytext extends Main{
         System.out.println("Ayelet      : "+Main.potion);
         if(Main.map){
             dis.line_(30);System.out.println("MISCELLANEOUS");
-            dis.line_(30);System.out.println("Tattered Map");
-        }dis.line__(30);
-    }
+            dis.line_(30);System.out.println("Tattered Map");}dis.line__(30);
+        }
     public void decription(){
-        dis.line__(30);
+        dis.line__(50);
         System.out.println("Equipments description");
+        dis.line_(50);
         System.out.println("1. Iron Sword");
         System.out.println("-> Just a normal iron sword");
         System.out.println("2. Iron Armour");
@@ -385,8 +382,9 @@ public class displaytext extends Main{
         System.out.println("6. Enid");
         System.out.println("-> A magic ring crafted by the Sorcerer Linus");
         System.out.println("-> Permanently increase hp by 10 point");
-        dis.line__(30);
+        dis.line__(50);
         System.out.println("Items description");
+        dis.line_(50);
         System.out.println("1. Wood");
         System.out.println("-> Just a resource from a forest");
         System.out.println("2. Stone");
@@ -401,15 +399,23 @@ public class displaytext extends Main{
         System.out.println("-> A portion brewed by Linus.");
         System.out.println("-> Heals 40% health when hp drops to 20%");
         System.out.println("-> Helas 50% health when equipped with shield");
-        dis.line__(30);
+        dis.line__(50);
+    }
+     public static void optionmethod(){
+        int a,b,c=0,hlen=0,len=in.thouses.length;
+        String dotspace=".  ",closehouse="";
+        String[] thousearr = new String[len+2];
+        for(a=0;a<len;a++){
+            if(in.thouses[a].open){thousearr[a]=in.thouses[a].name;}
+            else{closehouse="";hlen=in.thouses[a].name.length();for(b=0;b<hlen;b++){closehouse+="?";}thousearr[a]=closehouse;}}
+            thousearr[len]="Status";thousearr[len+1]="Description";
+        for(a=0;a<len+2;a++){
+            if(String.valueOf(a+1).length()>1){dotspace=". ";}
+            System.out.println((a+1)+dotspace+thousearr[a]);
+        }
     }
     public static void main(String[] args) {
-        Main.isword=true;
-        Main.msword=true;
-        Main.map=true;
-        dis.equipment();
-        dis.status();
-        dis.descriotion();
+        dis.optionmethod();
         
     }
 }

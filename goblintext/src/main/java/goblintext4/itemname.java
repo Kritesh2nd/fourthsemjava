@@ -75,9 +75,9 @@ public class itemname {
     townclass thouse1 = new townclass("Temple",1,true);
     townclass thouse2 = new townclass("Inn",2,true);
     townclass thouse3 = new townclass("Mayor",3,true);
-    townclass thouse4 = new townclass("Sorcerer",4,true);
+    townclass thouse4 = new townclass("Sorcerer",4,false);
     townclass thouse5 = new townclass("Magic Shop",5,false);
-    townclass thouse6 = new townclass("Blacksmit",6,true);
+    townclass thouse6 = new townclass("Blacksmit",6,false);
     townclass thouse7 = new townclass("Armour Shop",7,false);
     townclass thouse8 = new townclass("Forest",8,false);
     townclass[] thouses = {thouse1,thouse2,thouse3,thouse4,thouse5,thouse6,thouse7,thouse8};
