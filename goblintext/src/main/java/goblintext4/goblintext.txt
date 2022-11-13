@@ -33,3 +33,7 @@ North Mountain || 123244
 East Forest    || 123235
 South Sea      || 166667
 Cave           || 666678
+
+
+You are in the Whispering Willow Forest.
+Where would you go

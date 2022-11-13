@@ -328,6 +328,29 @@ public class displaytext extends Main{
         String[] forestname = new String[len];
         for(a=0;a<len;a++){forestname[a]=in.forest[a].name;}
         if(!Main.map){forestname[len-1]="???????????????";}
+        String[][] text = {
+            forestname,
+            {
+                "You are in ",//1
+                "You saw a normal goblin in raged cloth with a dagger.",
+                "You saw a armoured goblin with a spear.",
+                "There is a Goblin Shaman",
+                "What will you do?",
+                "Fight",//11
+                "You choose to fight the goblin.",
+                "You won the fight",//111
+                "What will you do?",
+                "Move Forward",//1111
+                "Return",//1112
+                "You died the fight",//112
+                "Return"//12
+            }
+        };
+        
+        
+        for(a=0;a<len;a++){
+            System.out.println((a+1)+". "+forestname[a]);
+        }
     }
     public void equipment(){
         Main.hp=100;Main.maxhp=100;Main.minatk=30;Main.maxatk=35;Main.def=15;

@@ -36,7 +36,7 @@ public class textmethod extends Main{
         
     }
     public void forest(){
-        
+        System.out.println("forest");
     }
     public static void main(String[] args) {
         tm.town();

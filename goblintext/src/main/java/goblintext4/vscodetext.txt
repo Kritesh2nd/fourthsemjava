@@ -1,0 +1,670 @@
+<!-- 
+
+
+this.atk=atk;
+this.def=def;
+this.hp=hp;
+this.rep=rep;
+this.level=level;
+this.count=count;
+this.mid=mid;
+this.rank=rank;
+this.drop=drop;
+
+final byte atk,final byte def,final byte hp,final byte rep,final byte level,final byte count,final byte mid,final byte rank,final byte drop
+
+public byte atk(){return atk;}
+public byte def(){return def;}
+public byte hp(){return hp;}
+public byte rep(){return rep;}
+public byte level(){return level;}
+public byte count(){return count;}
+public byte mid(){return mid;}
+public byte rank(){return rank;}
+public byte drop(){return drop;}
+5,2,20,1,1,3,1,1,3
+
+
+package blackdome6;
+public class EventRepoint extends Main {
+
+//    public EventRepo() {
+//        this.skeleton = new EventCreation(5,2,20,1,1,3,1,1,3);
+//    }
+    public class EventCreation{
+        int atk=0,def=0,hp=0,rep=0,level=0,count=0,mid=0,rank=0,drop=0;
+        public EventCreation(final int atk,final int def,final int hp,final int rep,
+                final int level,final int count,final int mid,final int rank,final int drop){
+            this.atk=atk;
+            this.def=def;
+            this.hp=hp;
+            this.rep=rep;
+            this.level=level;
+            this.count=count;
+            this.mid=mid;
+            this.rank=rank;
+            this.drop=drop; 
+        }
+        public int atk(){return atk;}
+        public int def(){return def;}
+        public int hp(){return hp;}
+        public int rep(){return rep;}
+        public int level(){return level;}
+        public int count(){return count;}
+        public int mid(){return mid;}
+        public int rank(){return rank;}
+        public int drop(){return drop;}
+    }
+    EventCreation skeleton;
+    static int aa = 12;
+    
+    public static void main(String[] args) {
+        System.out.println("aa"+aa);
+    }
+}
+
+
+
+
+
+atk
+def
+heal
+cc
+level
+rep
+cd
+sid
+cost
+
+int atk=0,def=0,heal=0,cc=0,level=0,rep=0,cd=0,sid=0,cost=0
+
+final int atk,final int def,final int heal,final int cc,final int level,final int rep,final int cd,final int sid,final int cost
+
+this.atk=atk;
+this.def=def;
+this.heal=heal;
+this.cc=cc;
+this.level=level;
+this.rep=rep;
+this.cd=cd;
+this.sid=sid;
+this.cost=cost;
+
+public int atk(){return atk;}
+public int def(){return def;}
+public int heal(){return heal;}
+public int cc(){return cc;}
+public int level(){return level;}
+public int rep(){return rep;}
+public int cd(){return cd;}
+public int sid(){return sid;}
+public int cost(){return cost;}
+
+150,0,0,0,1,1,5,2,0
+0,150,0,0,1,1,7,3,0
+
+window.setDeaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+f.remove(title1);f.remove(title2);
+            f.remove(btn1);f.remove(btn2);f.remove(btn3);
+
+
+name
+id
+open
+
+
+
+public townclass(String name,int id,boolean open){
+    this.name=name;
+    this.id=id;
+    this.open=open;
+}
+public String name(){return name;}
+public int id(){return id;}
+public boolean open(){return open;}
+
+
+"Sorcerer told me you were looking for me.",
+"Yeah, I was told you were a brave warrior.",
+"I am in need of some coal but because of goblins running in the forest.",
+"I am not able to do mine. If you bring me 5 coal I will reward you.",
+"Ok, I'll bring the coal."
+
+
+"Did you bring the coal?",
+"Yes I brought the coal. (0/5)",
+"No I did not.",
+"You were really brave as I heard.",
+"Here's your reward +1 Iron Armor.",
+"There is a magical stone called Aquycrase that appears once in a 100 year in The Serene Ocean",
+"But there are goblin warriors on the path to The Serene Ocean.",
+"If you bring me 2 Aquycrase I will make you two new equipment.",
+"Come to me when you have collected enough coal."
+
+
+"Were you able to get the Aquycrase?",
+"Yes I brought the magical stone. (0/2)",
+"No I did not.",
+"You know of no fear. You were really able to get the Aquycrase.",
+"As promised I will make you two new equipment.",
+"But it's going to be expensive, rare materials are expensive.",
+"Come to me after a week.",
+"Come to me when you get the Aquycrase."
+
+
+"By any chance do you have more coal? ",
+"If you have more coal, I will buy it from you. ",
+"Yes I have some more coal. (0/5) ",
+"No, I don't have more coal. ",
+"Here's your reward for the coal +50 silver. ",
+"You don't have enough coal. ",
+"You can bring me some more coal. I will pay you accordingly."
+
+"Shop",
+"----------------------------------------------------------",
+"|SN| Type  | Name          | Description          | Cost |",
+"|--------------------------------------------------------|",
+"|1 | Sword | Starshatterer | Executioner of Frost | 1000 |",
+"|2 | Armor | Malevolent    | Aquycrase Chestpiece | 1000 |",
+"----------------------------------------------------------"
+
+
+String[] type = {"forestname","townname","mayor","sorcerer","blacksmith","nun","innkeeper","coin","northmountain","westlake","southsea","eastforest","goblincave","sword","armor","shield","ring","potion","herb","magicstone"};
+String[] title = {"Forest Name","Town Name","Mayor","Sorcerer","Blacksmith","Nun","Innkeeper","Coin","North Mountain","West Lake","South Sea","East Forest","Goblin cave","Sword","Armor","Shield","Ring","Potion","Herb","Magic Stone"};
+String[] name = {"Whispering Willow Forest","Woodpine Rest","Brysen Morella","Linus","Janumri Runebow","Adelisa Adete","Sadie Berend","Silver","Ganary Slopes","Bienris Waters","The Serene Ocean","Norstead Woods","Dorbiens Hollow","Starshatterer","Malevolent","Radient Shield","Enid","Ayelet","Udi Leaf","Aquycrase"};
+String[] desc = {"","","","","","","","","","","","","","Executioner of Frost","Aquycrase Chestpiece","Protector of Heros","The Flower of Soul","Water of Life","",""};
+for(int a=0;a<title.length;a++){System.out.println("allname "+type[a]+" = new allname("+(a+1)+",\""+type[a]+"\",\""+name[a]+"\",\""+title[a]+"\",\""+desc[a]+"\");");}
+System.out.print("allname[] allnames = {");
+for(int b=0;b<title.length;b++){System.out.print(type[b]+",");}
+System.out.println("};");
+
+
+this.id=id;
+this.type=type;
+this.name=name;
+this.title=title;
+this.desc=desc;
+
+type1 = potion, type2 = ring
+title1 = Potion, title2 = Ring
+name1 = Ayelet, name2 = Enid
+desc1 = Water of Life , desc2 = The Flower of Soul
+
+String type1 = in.sword.type; // sword
+String type2 = in.armor.type; // armor
+String title1 = in.sword.title; // sword
+String title2 = in.armor.title; // Armor
+String name1 = in.sword.name; // Starshatterer
+String name2 = in.armor.name; // Malevolent
+String desc1 = in.sword.desc; // Executioner of Frost
+String desc2 = in.armor.desc; // Aquycrase Chestpiece
+
+
+type1 = sword
+type2 = armor
+title1 = sword
+title2 = Armor
+name1 = Starshatterer
+name2 = Malevolent
+desc1 = Executioner of Frost
+desc2 = Aquycrase Chestpiece
+
+
+
+=========================================
+STATUS
+-----------------------------------------
+Health  : 15/20
+Attack  : 4
+Defence : 3
+Silver  : 25
+Weapon  : none
+Armour  : none
+Shield  : none
+Ring    : none
+=========================================
+ITEMS
+-----------------------------------------
+|SN| Name        | Type         | Count |
+-----------------------------------------
+|1.| Wood        | resource     |  10   | 
+|2.| Stone       | resource     |  10   | 
+|3.| Coal        | resource     |  10   | 
+|4.| Udi Leaf    | herb         |  10   | 
+|5.| Aquycrase   | magic stone  |  10   | 
+|6.| Goblin Core | monster core |  10   | 
+|7.| Ayelet      | portion      |  10   | 
+-----------------------------------------
+=========================================
+
+Equipments description
+1. Iron Sword
+-> Just a normal iron sword
+2. Iron Armour
+-> Just a normal iron armor
+3. Starshatterer
+-> A powerful sword made by Janumri Runebow
+-> Aquycrase is used to make this sword
+4. Malevolent
+-> A powerful armor made by Janumri Runebow
+-> Aquycrase is used to make this armor
+5. Radiant Shield
+-> A holy item, that protects the user
+-> Increase defense by 2 point
+-> Blocks every 4th attack
+6. Enid
+-> A magic ring crafted by the Sorcerer Linus
+-> Permanently increase hp by 10 point
+
+Items description
+1. Wood
+-> Just a resource from a forest
+2. Stone
+-> Just a resource from a mountain
+3. Coal
+-> Just a resource from a mine
+4. Udi Leaf
+-> Rare leaf used for potion brewing
+5. Goblin Core
+-> Monster core found in strong goblin warrior
+6. Ayelet
+-> A portion brewed by Linus.
+-> Heals 40% health when hp drops to 20%
+-> Helas 50% health when equipped with shield
+
+
+
+
+
+System.out.println("=========================================");
+System.out.println("STATUS");
+System.out.println("-----------------------------------------");
+System.out.println("Health  : 15/20");
+System.out.println("Attack  : 4");
+System.out.println("Defence : 3");
+System.out.println("Silver  : 25");
+System.out.println("Weapon  : none");
+System.out.println("Armour  : none");
+System.out.println("Shield  : none");
+System.out.println("Ring    : none");
+System.out.println("=========================================");
+System.out.println("ITEMS");
+System.out.println("-----------------------------------------");
+System.out.println("|SN| Name        | Type         | Count |");
+System.out.println("-----------------------------------------");
+System.out.println("|1.| Wood        | resource     |  10   | ");
+System.out.println("|2.| Stone       | resource     |  10   | ");
+System.out.println("|3.| Coal        | resource     |  10   | ");
+System.out.println("|4.| Udi Leaf    | herb         |  10   | ");
+System.out.println("|5.| Aquycrase   | magic stone  |  10   | ");
+System.out.println("|6.| Goblin Core | monster core |  10   | ");
+System.out.println("|7.| Ayelet      | portion      |  10   | ");
+System.out.println("-----------------------------------------");
+System.out.println("=========================================");
+
+System.out.println("Equipments description");
+System.out.println("1. Iron Sword");
+System.out.println("-> Just a normal iron sword");
+System.out.println("2. Iron Armour");
+System.out.println("-> Just a normal iron armor");
+System.out.println("3. Starshatterer");
+System.out.println("-> A powerful sword made by Janumri Runebow");
+System.out.println("-> Aquycrase is used to make this sword");
+System.out.println("4. Malevolent");
+System.out.println("-> A powerful armor made by Janumri Runebow");
+System.out.println("-> Aquycrase is used to make this armor");
+System.out.println("5. Radiant Shield");
+System.out.println("-> A holy item, that protects the user");
+System.out.println("-> Increase defense by 2 point");
+System.out.println("-> Blocks every 4th attack");
+System.out.println("6. Enid");
+System.out.println("-> A magic ring crafted by the Sorcerer Linus");
+System.out.println("-> Permanently increase hp by 10 point");
+System.out.println("");
+System.out.println("Items description");
+System.out.println("1. Wood");
+System.out.println("-> Just a resource from a forest");
+System.out.println("2. Stone");
+System.out.println("-> Just a resource from a mountain");
+System.out.println("3. Coal");
+System.out.println("-> Just a resource from a mine");
+System.out.println("4. Udi Leaf");
+System.out.println("-> Rare leaf used for potion brewing");
+System.out.println("5. Goblin Core");
+System.out.println("-> Monster core found in strong goblin warrior");
+System.out.println("6. Ayelet");
+System.out.println("-> A portion brewed by Linus.");
+System.out.println("-> Heals 40% health when hp drops to 20%");
+System.out.println("-> Helas 50% health when equipped with shield");
+
+Do you want to pray in this temple?
+Pray [Donate 10 silver]
+Pray [Donate 100 silver]
+Backaway
+//Stage 1 Option result
+//Option 1 & 2
+May god hear your prayers.
+Your hp is increased +1 hp.
+
+
+
+
+1. WAP to find addition, substraction, multiplication, division, remainder of two number.
+2. WAP to store a positive integer in num and use these operator in num. (+=, -=, *=, /=)
+3. WAP to print
+    i.  100 natural number using for loop. [Eg: 1,2,3....100]
+    ii. Negative 100 natural number using while loop. [Eg: -1,-2,-3....-100]
+    iii.Multiplication table of 17 using do..while.
+4. Continue and break
+    i.  Use continue in 3(i) when loop reached 50
+    ii. Use break in 3(ii) when loop reached 50
+5. If, if..else, if...else if... else, &&, ||, !
+    i.  WAP to find if number is odd using if statement.
+    ii. WAP to find if number is odd or even using if..else statement.
+    iii.WAP to find greatest number among 3 number using else if statement.
+    iv. WAP to find if two given number are odd or not using (&&).
+    v.  WAP to find if any of the two given number is odd or not using (||).
+    vi. WAP to find if the given number is greater than 100 using (!).
+
+
+    1 2 211 212 22 231 232 30 3 311 312 32 331 332 4 411 412 42 5 51 52 53
+    1 2 211 212 22 231 232 3 311 312 32 331 332 4 411 412 42 431 432 5 51 52 53
+    
+
+
+
+this.id=id;
+this.hp=hp;
+this.atk=atk;
+this.def=def;
+this.coin=coin;
+this.reward=reward;
+
+public String name(){return name;}
+public String title(){return title;}
+public int id(){return id;}
+public int hp(){return hp;}
+public int atk(){return atk;}
+public int def(){return def;}
+public int coin(){return coin;}
+public int reward(){return reward;}
+
+
+
+
+public int hp(){return hp;}
+public int minatk(){return minatk;}
+public int maxatk(){return maxatk;}
+public int smlatk(){return smlatk;}
+public int bigatk(){return bigatk;}
+public int def(){return def;}
+public int coin(){return coin;}
+public int reward(){return reward;}
+
+
+
+goblinclass goblin = new goblinclass(100,30,35,0,0,15,40,0);
+goblinclass spear = new goblinclass(280,30,40,0,0,25,100,1);
+goblinclass shaman = new goblinclass(1600,60,70,115,135,100,500,2);
+goblinclass[] gob={goblin,spear,shaman};
+
+
+
+
+System.out.println("Wood");
+System.out.println("Stone");
+System.out.println("Coal");
+System.out.println("Udi Leaf");
+System.out.println("Aquycrase");
+System.out.println("Goblin Core");
+System.out.println("Ayelet");
+
+
+
+
+
+
+
+
+
+
+
+
+System.out.println("Equipments description");
+System.out.println("1. Iron Sword");
+System.out.println("-> Just a normal iron sword");
+System.out.println("2. Iron Armour");
+System.out.println("-> Just a normal iron armor");
+System.out.println("3. Starshatterer");
+System.out.println("-> A powerful sword made by Janumri Runebow");
+System.out.println("-> Aquycrase is used to make this sword");
+System.out.println("4. Malevolent");
+System.out.println("-> A powerful armor made by Janumri Runebow");
+System.out.println("-> Aquycrase is used to make this armor");
+System.out.println("5. Radiant Shield");
+System.out.println("-> A holy item, that protects the user");
+System.out.println("-> Increase defense by 2 point");
+System.out.println("-> Blocks every 4th attack");
+System.out.println("6. Enid");
+System.out.println("-> A magic ring crafted by the Sorcerer Linus");
+System.out.println("-> Permanently increase hp by 10 point");
+System.out.println("");
+System.out.println("Items description");
+System.out.println("1. Wood");
+System.out.println("-> Just a resource from a forest");
+System.out.println("2. Stone");
+System.out.println("-> Just a resource from a mountain");
+System.out.println("3. Coal");
+System.out.println("-> Just a resource from a mine");
+System.out.println("4. Udi Leaf");
+System.out.println("-> Rare leaf used for potion brewing");
+System.out.println("5. Goblin Core");
+System.out.println("-> Monster core found in strong goblin warrior");
+System.out.println("6. Ayelet");
+System.out.println("-> A portion brewed by Linus.");
+System.out.println("-> Heals 40% health when hp drops to 20%");
+System.out.println("-> Helas 50% health when equipped with shield");
+
+static int[][] forestcode = {
+    {1,3,3,2,3,2},
+    {1,2,3,2,4,4},
+    {1,2,3,2,3,5},
+    {1,6,6,6,6,7},
+    {6,6,6,6,7,8}
+};
+forestclass west = new forestclass("Bienris Waters",forestcode[0]);
+forestclass north = new forestclass("Ganary Slopes",forestcode[1]);
+forestclass east = new forestclass("Norstead Woods",forestcode[2]);
+forestclass south = new forestclass("The Serene Ocean",forestcode[3]);
+forestclass cave = new forestclass("Dorbiens Hollow",forestcode[4]);
+
+
+
+12 121 1211 12111 12112 1212 122
+forest 1 phase 2
+|--forest 1 phase 2 12
+| // attack or return
+|  forest 1 phase 2 option 1 121
+| // fight with the goblin (win or die)
+| forest 1 phase 2 option 1 won 1211
+| // you won. go forward or return
+| forest 1 phase 2 option 1 won forward 12111
+| // you move forward
+| ====goes to phase 3
+| forest 1 phase 2 option 1 won return 12112
+| You returned to the Whispering Willow Forest
+| Where would you go 1-8
+| ====forest 8 options
+| forest 1 phase 2 option 1 lost 1212
+| // you died, lost 50% silver
+|-->forest 1 phase 2 option 2 122
+You returned to the Whispering Willow Forest
+Where would you go 1-8
+====forest 8 options
+
+
+You are in the Whispering Willow Forest.
+Where would you go?
+1. Bienris Waters
+2. Ganary Slopes
+3. Norstead Woods
+4. The Serene Ocean
+5. ???????????????
+6. Woodpine Rest Town
+7. Status
+8. Description
+
+// ============================ Phase 1 ============================ 
+
+|-> Bienris Waters (1)
+|You are in Ganary Slopes.
+|---[x]---x---x---x---x---
+| |==You saw a normal goblin in raged cloth with a dagger.
+| |
+| |==What will you do?
+| |->1. Fight (11)
+| |  
+| | |==You choose to fight the goblin.
+| | |  -----------xxx---Fight---xxx-----------
+| | |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| | |  || Your Hp   : 100  || Goblin Hp : 100 ||
+| | |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| | |
+| | |==Click Enter to attack
+| | |->You won the fight (111)
+| | |
+| | | |==What will you do?
+| | | |->Move Forward (1111)
+| | | |==>You are in phase 2
+| | | |
+| | | |->Return (1112)
+| | |
+| | |->You died the fight (112)
+| | 
+| |->2. Return (12)
+| 
+|-> Ganary Slopes
+|-> Norstead Woods
+|-> The Serene Ocean
+|-> ???????????????
+|-> Woodpine Rest Town
+|-> Status
+|-> Description
+
+
+
+// ============================ Phase 2 ============================ 
+|-> Bienris Waters (1)
+|You are in Ganary Slopes.
+|---[x]---[x]---x---x---x---
+| |==You saw a normal goblin in raged cloth with a dagger.
+| |
+| |==What will you do?
+| |->1. Fight (11)
+| |  
+| | |==You choose to fight the goblin.
+| | |  -----------xxx---Fight---xxx-----------
+| | |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| | |  || Your Hp   : 100  || Goblin Hp : 100 ||
+| | |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| | |
+| | |==Click Enter to attack
+| | |->You won the fight (111)
+| | |
+| | | |==What will you do?
+| | | |->Move Forward (1111)
+| | | |==>You are in phase 6
+| | | |
+| | | |->Return (1112)
+| | |
+| | |->You died the fight (112)
+| | 
+| |->2. Return (12)
+| 
+|-> Ganary Slopes
+|-> Norstead Woods
+|-> The Serene Ocean
+|-> ???????????????
+|-> Woodpine Rest Town
+|-> Status
+|-> Description
+
+
+// ============================ Phase 6 ============================ 
+|-> Bienris Waters (1)
+|You are in Ganary Slopes.
+|---[x]---[x]---x---x---x---
+| |==You saw a normal goblin in raged cloth with a dagger.
+| |
+| |==What will you do?
+| |->1. Fight (11)
+| |  
+| | |==You choose to fight the goblin.
+| | |  -----------xxx---Fight---xxx-----------
+| | |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| | |  || Your Hp   : 100  || Goblin Hp : 100 ||
+| | |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| | |
+| | |==Click Enter to attack
+| | |->You won the fight (111)
+| | |
+| | | => Go to the Whispering Willow Forest.
+| | |
+| | |->You died the fight (112)
+| | 
+| |->2. Return (12)
+| 
+|-> Ganary Slopes
+|-> Norstead Woods
+|-> The Serene Ocean
+|-> ???????????????
+|-> Woodpine Rest Town
+|-> Status
+|-> Description
+
+
+// ============================ Phase 1 or 6 ============================ 
+|-> Bienris Waters (1)
+|You are in Ganary Slopes.
+|---[x]---[x]---x---x---x---
+| |==You saw a normal goblin in raged cloth with a dagger.
+| |
+| |==What will you do?
+| |->1. Fight (11)
+| |  
+| | |==You choose to fight the goblin.
+| | |  -----------xxx---Fight---xxx-----------
+| | |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| | |  || Your Hp   : 100  || Goblin Hp : 100 ||
+| | |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| | |
+| | |==Click Enter to attack
+| | |->You won the fight (111)
+| | | 
+| | | Options next phase or last phase
+| | |  if phase < 6
+| | | |==What will you do?
+| | | |->Move Forward (1111)
+| | | |==> You go to next phase
+| | | |
+| | | |->Return (1112)
+| | |
+| | | else if phase = 6
+| | | Click enter to go to the Whispering Willow Forest. (1113)
+| | | =>You are in Whispering Willow Forest.
+| | |
+| | |->You died the fight (112)
+| | 
+| |->2. Return (12)
+| 
+|-> Ganary Slopes
+|-> Norstead Woods
+|-> The Serene Ocean
+|-> ???????????????
+|-> Woodpine Rest Town
+|-> Status
+|-> Description
+
+-->
