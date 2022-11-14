@@ -2,6 +2,7 @@ package goblintext4;
 //test package for fight with goblins
 //import static goblintext4.displaytext.dis;
 //import static goblintext4.itemname.in;
+import static goblintext4.displaytext.dis;
 import java.util.Scanner;
 public class Main {
     static goblintext3.Main main = new goblintext3.Main();
@@ -14,6 +15,7 @@ public class Main {
     
     static int templedonation=0;
     public static void main(String[] args) {
-        
+        dis.line(1,50);
+        dis.line(2,50);
     }
 }

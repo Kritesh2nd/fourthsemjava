@@ -17,6 +17,9 @@ public class displaytext extends Main{
     public void youchose(int n){
         System.out.println("\nYou chose option 1~"+n+" : ");
     }
+    public void wherego(int n){
+        System.out.println("\nWhere would you like to go 1~"+n+" : ");
+    }
     public void nextline(){
         System.out.println("");
     }
@@ -24,6 +27,49 @@ public class displaytext extends Main{
         System.out.println("\nenter to continue...");
         try{System.in.read();}
         catch(IOException e){}
+    }
+    public void line(int m, int n){
+        int a;
+        switch (m) {
+            case 1 -> dis.linehelper("~",n);
+            case 2 -> dis.linehelper("!",n);
+            case 3 -> dis.linehelper("@",n);
+            case 4 -> dis.linehelper("#",n);
+            case 5 -> dis.linehelper("$",n);
+            case 6 -> dis.linehelper("%",n);
+            case 7 -> dis.linehelper("^",n);
+            case 8 -> dis.linehelper("&",n);
+            case 9 -> dis.linehelper("*",n);
+            case 10 -> dis.linehelper("(",n);
+            case 11 -> dis.linehelper(")",n);
+            case 12 -> dis.linehelper("-",n);
+            case 13 -> dis.linehelper("_",n);
+            case 14 -> dis.linehelper("=",n);
+            case 15 -> dis.linehelper("+",n);
+            case 16 -> dis.linehelper("{",n);
+            case 17 -> dis.linehelper("}",n);
+            case 18 -> dis.linehelper("[",n);
+            case 19 -> dis.linehelper("]",n);
+            case 20 -> dis.linehelper("\\",n);
+            case 21 -> dis.linehelper("|",n);
+            case 22 -> dis.linehelper("\"",n);
+            case 23 -> dis.linehelper("'",n);
+            case 24 -> dis.linehelper(":",n);
+            case 25 -> dis.linehelper(";",n);
+            case 26 -> dis.linehelper("<",n);
+            case 27 -> dis.linehelper(">",n);
+            case 28 -> dis.linehelper(",",n);
+            case 29 -> dis.linehelper(".",n);
+            case 30 -> dis.linehelper("?",n);
+            case 31 -> dis.linehelper("/",n);
+            case 32 -> dis.linehelper("`",n);
+            default -> {dis.linehelper(" ",n);}
+        }
+    }
+    public void linehelper(String symbol,int len){
+        String temp="";
+        for(int a=0;a<len;a++){temp+=symbol;}
+        System.out.println(temp);
     }
     public void line_(int n){
         for(int a=0;a<n;a++){System.out.print("-");}dis.nextline();
@@ -323,34 +369,82 @@ public class displaytext extends Main{
         };
         for(a=0;a<text.length;a++){if(m==a&&n>=0&&n<text[a].length){System.out.println(text[m][n]);}}
     }
-    public void foresttext(){
+    public void foresttext(int m, int n){
         int a,len=in.forest.length;
         String[] forestname = new String[len];
         for(a=0;a<len;a++){forestname[a]=in.forest[a].name;}
         if(!Main.map){forestname[len-1]="???????????????";}
         String[][] text = {
-            forestname,
             {
-                "You are in ",//1
+                "You are in "+in.forestname.name+".",
+                "You are in "+forestname[0]+".",
+                "You are in "+forestname[1]+".",
+                "You are in "+forestname[2]+".",
+                "You are in "+forestname[3]+".",
+                "You are in "+forestname[4]+"."
+            },
+            {
+                "Where would you like to go?",//1
                 "You saw a normal goblin in raged cloth with a dagger.",
                 "You saw a armoured goblin with a spear.",
                 "There is a Goblin Shaman",
                 "What will you do?",
                 "Fight",//11
                 "You choose to fight the goblin.",
+                "click enter to attack...",
                 "You won the fight",//111
                 "What will you do?",
                 "Move Forward",//1111
                 "Return",//1112
                 "You died the fight",//112
                 "Return"//12
+            },
+            {
+                forestname[0],
+                forestname[1],
+                forestname[2],
+                forestname[3],
+                forestname[4]
             }
         };
-        
-        
-        for(a=0;a<len;a++){
-            System.out.println((a+1)+". "+forestname[a]);
-        }
+        for(a=0;a<text.length;a++){if(m==a&&n>=0&&n<text[a].length){System.out.println(text[m][n]);}}
+    }
+    public void fighttext(int m,int n){
+        int a,b,c;
+        String[][] text = {
+            {
+                "---[X]---X---X---X---X---X---",
+                "---X---[X]---X---X---X---X---",
+                "---X---X---[X]---X---X---X---",
+                "---X---X---X---[X]---X---X---",
+                "---X---X---X---X---[X]---X---",
+                "---X---X---X---X---X---[X]---"
+                
+            },
+            {
+                "------------xxx---Fight---xxx------------",
+                "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+                "|| Your Hp   : ",
+                "|| Goblin Hp : ",
+                "||"
+            }
+        };
+//        System.out.println(text.length);
+        for(a=0;a<text.length;a++){if(m==a&&n>=0&&n<text[a].length){System.out.println(text[m][n]);}}
+    }
+    public void healthtext(int hp,int ehp){
+        int a;
+        int hplen = String.valueOf(hp).length();
+        int ehplen = String.valueOf(ehp).length();
+        String hpspace="",ehpspace="";
+        for(a=0;a<6-hplen;a++){hpspace+=" ";}
+        for(a=0;a<6-ehplen;a++){ehpspace+=" ";}
+        dis.fighttext(1,1);
+        System.out.println("|| Your HP : "+hp+hpspace+"|| Goblin Hp: "+ehp+ehpspace+"||");
+        dis.fighttext(1,1);
+    }
+    public void attacktext(){
+        System.out.println("click enter to attack...");
     }
     public void equipment(){
         Main.hp=100;Main.maxhp=100;Main.minatk=30;Main.maxatk=35;Main.def=15;
@@ -394,7 +488,7 @@ public class displaytext extends Main{
             dis.line_(30);System.out.println("MISCELLANEOUS");
             dis.line_(30);System.out.println("Tattered Map");}dis.line__(30);
         }
-    public void decription(){
+    public void description(){
         dis.line__(50);
         System.out.println("Equipments description");
         dis.line_(50);
@@ -476,8 +570,8 @@ public class displaytext extends Main{
                 case 8 -> tm.temple();
                 case 9 -> tm.forest();
                 case 10 -> dis.status();
-                case 11 -> dis.decription();
-                default -> dis.whichplace();
+                case 11 -> dis.description();
+                default -> {dis.invalid();dis.whichplace();}
             }
         }
         else{
@@ -486,7 +580,6 @@ public class displaytext extends Main{
     }
     public static void main(String[] args) {
 //        dis.optionmethod();
-        dis.foresttext();
-        
+        dis.healthtext(100,93);
     }
 }
