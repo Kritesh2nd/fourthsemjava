@@ -445,6 +445,8 @@ public class displaytext extends Main{
     }
     public void attacktext(){
         System.out.println("click enter to attack...");
+        try{System.in.read();}
+        catch(IOException e){}
     }
     public void equipment(){
         Main.hp=100;Main.maxhp=100;Main.minatk=30;Main.maxatk=35;Main.def=15;

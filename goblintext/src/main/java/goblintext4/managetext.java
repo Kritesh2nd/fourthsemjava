@@ -1,5 +1,6 @@
 package goblintext4;
 import static goblintext4.displaytext.dis;
+import static goblintext4.forest.f;
 import static goblintext4.textmethod.tm;
 public class managetext extends Main{
     static managetext mt = new managetext();
@@ -423,20 +424,30 @@ public class managetext extends Main{
         } 
     }
     public void westlake(int stage){
+        int westopt=0;
         if(stage==1){
             dis.foresttext(0,0);
             dis.fighttext(0,0);
         }
         else if(stage==11){
-            dis.foresttext(1,0);
-            dis.foresttext(1,3);
-            System.out.print("1. ");dis.foresttext(1,4);
-            System.out.print("2. ");dis.foresttext(1,9);
+            dis.foresttext(1,1);
+            dis.foresttext(1,4);
+            System.out.print("1. ");dis.foresttext(1,5);
+            System.out.print("2. ");dis.foresttext(1,11);
+            dis.youchose(2);
+            westopt=tm.getopt();
+            switch(westopt){
+                case 1 -> {/*f.fight(0,1);*/}
+                case 2 -> mt.westlake(12);
+                default -> {dis.invalid();dis.enter();mt.mainforest();}
+            }
         }
         else if(stage==111){
-            dis.foresttext(1,5);
-            dis.healthtext(100,93);
-            dis.attacktext();
+            dis.foresttext(1,6);
+        }
+        else if(stage==12){
+            dis.foresttext(1,13);
+            mt.mainforest();
         }
             
     }
@@ -444,10 +455,9 @@ public class managetext extends Main{
     public void eastforest(int stage){}
     public void southsea(int stage){}
     public void goblincave(int stage){}
-    public void mainforest(int stage){
+    public void mainforest(){
         int mforestopt=0;
-        if(stage==1){
-            dis.foresttext(0,0);
+        dis.foresttext(0,0);
             dis.foresttext(1,0);
             dis.nextline();
             System.out.print("1. ");dis.foresttext(2,0);
@@ -460,20 +470,23 @@ public class managetext extends Main{
             dis.youchose(7);
             mforestopt=tm.getopt();
             switch(mforestopt){
-                case 1 -> mt.westlake(1);
+                case 1 -> tm.westlake();
                 case 2 -> mt.northmountain(1);
                 case 3 -> mt.eastforest(1);
                 case 4 -> mt.southsea(1);
                 case 5 -> mt.goblincave(1);
-                case 6 -> {dis.status();dis.enter();mt.mainforest(1);}
-                case 7 -> {dis.description();dis.enter();mt.mainforest(1);}
+                case 6 -> {dis.status();dis.enter();mt.mainforest();}
+                case 7 -> {dis.description();dis.enter();mt.mainforest();}
                 default -> {dis.invalid();dis.enter();dis.whichplace();}
             }
-        }
     }
     
     public static void main(String[] args) {
-        mt.mainforest(1);
+        mt.westlake(1);
+        dis.nextline();
+        mt.westlake(11);
+        dis.nextline();
+        mt.westlake(111);
     }
 }
 

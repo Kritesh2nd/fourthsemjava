@@ -1,29 +1,55 @@
 package goblintext4;
+
+import static goblintext4.displaytext.dis;
+import static goblintext4.itemname.in;
+
 public class forest {
-    public class forestclass{
-        String name="name";int[] stage;
-        public forestclass(String name, int[] stage){
-            this.name=name;
-            this.stage=stage;
+    static forest f = new forest();
+    public void fight(int eny, int res){
+        Main.isword=true;
+        dis.equipment();
+        int ehp=in.gob[eny].hp,eminatk=in.gob[eny].minatk,emaxatk=in.gob[eny].maxatk,esmlatk=in.gob[eny].smlatk,
+                ebigatk=in.gob[eny].bigatk,edef=in.gob[eny].def,ecoin=in.gob[eny].coin,ereward=in.gob[eny].reward;
+        int hp=Main.hp,minatk=Main.minatk,maxatk=Main.maxatk,def=Main.def;
+        int turn=1,atk=0,eatk=0;
+        atk=attack(minatk,maxatk);
+        eatk=attack(eminatk,emaxatk);
+        dis.nextline();
+        System.out.println("------xxx---XXX---Fight---XXX--xxx-------");
+        dis.healthtext(hp,ehp);
+        while(hp>0 && ehp>0){
+            if(turn==1){
+                dis.attacktext();
+                ehp-=(atk-edef);
+                turn=2;
+                System.out.println("You attacked the goblin.");
+                System.out.println("You dealt "+(atk-edef)+" damage");
+            }
+            else if(turn==2){
+                hp-=(eatk-def);
+                turn=1;
+                System.out.println("Goblin attacked with you a dagger.");
+                System.out.println("You received "+(eatk-def)+" damage");
+                dis.healthtext(hp,ehp);
+            }
         }
-        public String name(){return name;}
-        public int[] stage(){return stage;}
+        if(hp<0){
+            hp=0;
+            dis.healthtext(hp,ehp);
+            System.out.println("You died.");
+        }
+        else if(ehp<0){
+            ehp=0;
+            dis.healthtext(hp,ehp);
+            System.out.println("Goblin died.");
+            System.out.println("You received +32 silver.");
+        }
     }
-    forestclass for1,for2,for3,for4,for5;
-    public void insertgoblinvalue(){
-        int[] val1={1,3,3,2,3,2};
-        int[] val2={1,2,3,2,4,4};
-        int[] val3={1,2,3,2,3,5};
-        int[] val4={1,6,6,6,6,7};
-        int[] val5={6,6,6,6,7,8};
-        this.for1 = new forestclass("Bienris Waters",val1);
-        this.for2 = new forestclass("Ganary Slopes",val2);
-        this.for3 = new forestclass("Norstead Woods",val3);
-        this.for4 = new forestclass("The Serene Ocean",val4);
-        this.for5 = new forestclass("Dorbiens Hollow",val5);
+    public int attack(int min, int max){
+        int atk = (int)(Math.random()*(max-min+1)+min);  
+        return atk;
     }
-    public static void cat(){
-        
+    public static void main(String[] args) {
+        f.fight(0,1);
     }
 }
-

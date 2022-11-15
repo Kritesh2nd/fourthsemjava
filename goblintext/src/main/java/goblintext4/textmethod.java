@@ -4,7 +4,7 @@ import static goblintext4.managetext.mt;
 import java.util.Scanner;
 public class textmethod extends Main{
     static textmethod tm = new textmethod();
-    
+    static int westphase=1,northphase=1;
     public int getopt(){
         Scanner scgetopt = new Scanner(System.in);
         int scopt = scgetopt.nextInt();
@@ -35,11 +35,24 @@ public class textmethod extends Main{
     public void inn(){
         
     }
+    public void westlake(){
+        int westopt=0;
+        mt.westlake(1);
+        mt.westlake(11);
+        dis.youchose(2);
+        westopt = tm.getopt();
+        switch(westopt){
+            case 1 -> {/*mt.westlake(11)*/System.out.println("Calling fight");}
+            case 2 -> mt.westlake(12);
+            default -> {dis.invalid();dis.enter();mt.mainforest();}
+        }
+    }
     public void forest(){
         System.out.println("forest");
-        mt.mainforest(1);
+        mt.mainforest();
     }
     public static void main(String[] args) {
-        tm.town();
+        mt.mainforest();
+//        tm.westlake();
     }
 }
