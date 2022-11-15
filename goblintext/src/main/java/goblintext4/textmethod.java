@@ -1,5 +1,6 @@
 package goblintext4;
 import static goblintext4.displaytext.dis;
+import static goblintext4.forest.f;
 import static goblintext4.managetext.mt;
 import java.util.Scanner;
 public class textmethod extends Main{
@@ -36,23 +37,39 @@ public class textmethod extends Main{
         
     }
     public void westlake(){
-        int westopt=0;
+        int westopt=0,fightresult=0;
         mt.westlake(1);
         mt.westlake(11);
         dis.youchose(2);
         westopt = tm.getopt();
         switch(westopt){
-            case 1 -> {/*mt.westlake(11)*/System.out.println("Calling fight");}
+            case 1 -> {
+//                calling for fight
+                mt.westlake(111);
+                fightresult=f.fight(0,1);
+                if(fightresult==1){
+                    
+                }
+                else{
+                    
+                }
+            }
             case 2 -> mt.westlake(12);
             default -> {dis.invalid();dis.enter();mt.mainforest();}
         }
+    }
+    public void fightwon(){
+        
+    }
+    public void fightloss(){
+        
     }
     public void forest(){
         System.out.println("forest");
         mt.mainforest();
     }
     public static void main(String[] args) {
-        mt.mainforest();
-//        tm.westlake();
+//        mt.mainforest();
+        tm.westlake();
     }
 }

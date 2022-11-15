@@ -71,6 +71,17 @@ public class itemname {
         public String name(){return name;}
         public int[] arr(){return arr;}
     }
+    public class forestreward{
+        int mincoin=0,maxcoin=0,item=0;
+        public forestreward(int mincoin,int maxcoin,int item){
+            this.mincoin=mincoin;
+            this.maxcoin=maxcoin;
+            this.item=item;
+        }
+        public int mincoin(){return mincoin;}
+        public int maxcoin(){return maxcoin;}
+        public int item(){return item;}
+    }
     allname forestname = new allname(1,"forestname","Whispering Willow Forest","Forest Name","");
     allname townname = new allname(2,"townname","Woodpine Rest","Town Name","");
     allname mayor = new allname(3,"mayor","Brysen","Mayor","");
@@ -107,6 +118,10 @@ public class itemname {
     goblinclass[] gob={goblin,spear,shaman};
     forestclass west,north,east,south,cave;
     forestclass[] forest;
+    forestreward first = new forestreward(30,35,0);
+    forestreward second = new forestreward(80,90,1);
+    forestreward third = new forestreward(300,400,2);
+    forestreward[] reward = {first,second,third};
     public static void main(String[] args) {
         System.out.println(in.forest.length);
     }

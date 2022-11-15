@@ -424,7 +424,6 @@ public class managetext extends Main{
         } 
     }
     public void westlake(int stage){
-        int westopt=0;
         if(stage==1){
             dis.foresttext(0,0);
             dis.fighttext(0,0);
@@ -434,13 +433,6 @@ public class managetext extends Main{
             dis.foresttext(1,4);
             System.out.print("1. ");dis.foresttext(1,5);
             System.out.print("2. ");dis.foresttext(1,11);
-            dis.youchose(2);
-            westopt=tm.getopt();
-            switch(westopt){
-                case 1 -> {/*f.fight(0,1);*/}
-                case 2 -> mt.westlake(12);
-                default -> {dis.invalid();dis.enter();mt.mainforest();}
-            }
         }
         else if(stage==111){
             dis.foresttext(1,6);
@@ -449,7 +441,6 @@ public class managetext extends Main{
             dis.foresttext(1,13);
             mt.mainforest();
         }
-            
     }
     public void northmountain(int stage){}
     public void eastforest(int stage){}
