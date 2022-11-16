@@ -441,6 +441,10 @@ public class managetext extends Main{
             dis.foresttext(1,13);
             mt.mainforest();
         }
+        else if(stage==2){
+            dis.foresttext(0,0);
+            dis.fighttext(0,1);
+        }
     }
     public void northmountain(int stage){}
     public void eastforest(int stage){}
@@ -461,7 +465,7 @@ public class managetext extends Main{
             dis.youchose(7);
             mforestopt=tm.getopt();
             switch(mforestopt){
-                case 1 -> tm.westlake();
+                case 1 -> tm.westlake(1);
                 case 2 -> mt.northmountain(1);
                 case 3 -> mt.eastforest(1);
                 case 4 -> mt.southsea(1);

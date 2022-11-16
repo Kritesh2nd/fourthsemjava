@@ -36,26 +36,31 @@ public class textmethod extends Main{
     public void inn(){
         
     }
-    public void westlake(){
+    public void westlake(int phase){
         int westopt=0,fightresult=0;
-        mt.westlake(1);
-        mt.westlake(11);
-        dis.youchose(2);
-        westopt = tm.getopt();
-        switch(westopt){
-            case 1 -> {
-//                calling for fight
-                mt.westlake(111);
-                fightresult=f.fight(0,1);
-                if(fightresult==1){
-                    
+        if(phase==1){
+            mt.westlake(1);
+            mt.westlake(11);
+            dis.youchose(2);
+            westopt = tm.getopt();
+            switch(westopt){
+                case 1 -> {
+    //                calling for fight
+                    mt.westlake(111);
+                    fightresult=f.fight(0,1);
+                    if(fightresult==1){
+                        tm.westlake(2);
+                    }
+                    else{
+
+                    }
                 }
-                else{
-                    
-                }
+                case 2 -> mt.westlake(12);
+                default -> {dis.invalid();dis.enter();mt.mainforest();}
             }
-            case 2 -> mt.westlake(12);
-            default -> {dis.invalid();dis.enter();mt.mainforest();}
+        }
+        else if(phase==2){
+            
         }
     }
     public void fightwon(){
@@ -70,6 +75,8 @@ public class textmethod extends Main{
     }
     public static void main(String[] args) {
 //        mt.mainforest();
-        tm.westlake();
+//        tm.westlake(1);
+mt.westlake(1);
+            mt.westlake(11);
     }
 }
